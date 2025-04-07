@@ -24,6 +24,12 @@ export default function NavBar() {
             <Link className="nav-link" href={`/author/${user.uid}`}>
               Authors
             </Link>
+            <Link className="nav-link" href={`/author/edit/${user.uid}`}>
+              Create an Author
+            </Link>
+            <Link className="nav-link" href={`/profile/${user.uid}`}>
+              Profile
+            </Link>
           </Nav>
           <Button variant="danger" onClick={signOut}>
             Sign Out
