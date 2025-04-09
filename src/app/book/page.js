@@ -5,11 +5,11 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Button } from 'react-bootstrap';
-import { getBooks } from '../api/bookData';
-import { useAuth } from '../utils/context/authContext';
-import BookCard from '../components/BookCard';
+import { getBooks } from '@/api/bookData';
+import { useAuth } from '@/utils/context/authContext';
+import BookCard from '@/components/BookCard';
 
-function Home() {
+function Books() {
   // TODO: Set a state for books
   const [books, setBooks] = useState([]);
 
@@ -41,4 +41,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Books;
